@@ -1,0 +1,55 @@
+ Volume in drive B is OSS
+ Volume Serial Number is 3CFC-2529
+
+ Directory of B:\
+
+2017-07-05  11:36    <DIR>          .
+2017-07-05  11:36    <DIR>          ..
+2017-07-05  11:36    <DIR>          Downloads
+               0 File(s)              0 bytes
+
+ Directory of B:\Downloads
+
+2017-07-05  11:36    <DIR>          .
+2017-07-05  11:36    <DIR>          ..
+2016-09-20  15:55            48ÿ996 -Europe-Migration and Asylum in Europe-48 hour report 15042016.docx
+2016-10-27  14:00         4ÿ372ÿ139 4372139-mateusz-kupilas-junior-developer.pdf
+2017-02-06  16:41         2ÿ185ÿ788 ActivityIndicator_1.1.7.38.zip
+2017-02-18  17:50             1ÿ381 adware.txt
+2016-06-27  14:51               360 Allow_Floppy_Write_Access.reg
+2016-10-20  12:46        37ÿ172ÿ193 amiga_magazyn-1994-8.djvu
+2017-02-01  16:30        12ÿ273ÿ456 autoit-v3-setup.exe
+2017-05-08  17:00        71ÿ688ÿ243 BatchCompiler1700.zip
+2016-08-23  14:33        10ÿ513ÿ112 BingDesktopSetup.exe
+2016-09-13  15:41         2ÿ732ÿ854 blobby2-win32-1.0-installer.exe
+2017-01-19  16:12         7ÿ453ÿ112 BoseUpdaterInstaller_1.3.6.1107.6258.exe
+2016-09-05  12:57         4ÿ280ÿ987 cd110511.zip
+2017-01-25  15:59        13ÿ063ÿ224 Chipset_Driver_CWGRX_WN32_4.0.6.60_A04_01.EXE
+2016-07-04  11:05       191ÿ889ÿ408 clonezilla-live-2.4.6-25-amd64.iso
+2017-03-13  10:56       267ÿ386ÿ880 clonezilla_live_alternative-20170220-yakkety-i386.iso
+2017-07-05  11:22           456ÿ027 diffutils-2.8.7-1-bin.zip
+2017-03-20  10:38        11ÿ321ÿ774 DittoSetup_64bit_3_21_134_0.exe
+2016-10-06  16:35        46ÿ988ÿ448 eclipse-inst-win64.exe
+2017-06-20  11:15         4ÿ295ÿ816 fiddlersetup.exe
+2017-04-11  13:18           245ÿ416 Firefox Setup Stub 52.0.2.exe
+2017-02-01  11:09           694ÿ272 FW EMA Projects and CMDO  CCO - Distributor End User sales.msg
+2017-07-05  09:42         2ÿ172ÿ360 GemPcCCID.exe
+2016-07-26  15:35         1ÿ945ÿ931 GrowlOutlookAddInSetup.zip
+2017-06-30  09:45            98ÿ304 HPUSBDisk.exe
+2016-06-27  10:17         1ÿ111ÿ191 imageusb.zip
+2016-09-30  11:39           188ÿ028 incident.xlsx
+2016-09-19  11:36            18ÿ007 incidents.xlsx
+2016-09-20  13:35           131ÿ660 incidents1.xlsx
+2017-05-10  12:15               139 InstallFlash.cmd
+2017-05-10  12:22        20ÿ320ÿ760 install_flash_player.exe
+2017-05-10  12:14        19ÿ786ÿ744 install_flash_player_ax.exe
+2017-05-10  12:14        20ÿ602ÿ360 install_flash_player_ppapi.exe
+2017-07-04  11:40        16ÿ897ÿ824 jre-6u29-windows-i586.exe
+2017-07-04  11:40        17ÿ197ÿ344 jre-6u29-windows-x64.exe
+2016-08-30  14:25        55ÿ186ÿ496 jre-8u101-windows-i586.exe
+2017-05-31  09:57        65ÿ659ÿ968 jre-8u131-windows-x64.exe
+              36 File(s)    910ÿ381ÿ002 bytes
+
+     Total Files Listed:
+              36 File(s)    910ÿ381ÿ002 bytes
+               5 Dir(s)  193ÿ959ÿ251ÿ968 bytes free
