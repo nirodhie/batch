@@ -35,6 +35,7 @@ echo [15] ile jest miejsca na dysku C
 echo [16] pokaz adres ?IP
 echo [17] pokaz kto jest zalogowany
 echo [18] szybkie nadanie admina mi i natalii
+echo [19] szybkie nadanie admina mi i natalii
 echo ----------------------------------------
 echo [98] wybierz inny komputer po nazwisku uzytkownika
 echo [99] wybierz inny komputer po hostname
@@ -60,6 +61,7 @@ if %counter% ==15  (goto :folderSizes)
 if %counter% ==16  (goto :showIP)
 if %counter% ==17  (goto :whoIsLogged)
 if %counter% ==18  (goto :fastAdmin)
+if %counter% ==19  (goto :AutoStartScript)
 if %counter% ==98  (goto :wyborKomputeraPoNazwisku)
 if %counter% ==99  (goto :wyborKomputeraPoHostname)
 
@@ -169,6 +171,28 @@ rem set /p komputer1= nazwa komputera?
 %~dp0psexec \\%komputer% net localgroup Administrators "BDX.com\hclteska" /add
 %~dp0psexec \\%komputer% net localgroup Administrators "BDX.com\hclpaszkowsk" /add
 goto menu
+
+
+
+:AutoStartScript
+
+copy 
+%~dp0psexec \\%komputer% net localgroup Administrators "BDX.com\hclteska" /add
+%~dp0psexec \\%komputer% net localgroup Administrators "BDX.com\hclpaszkowsk" /add
+net use a: /delete /yes
+net use b: /delete /yes
+
+net use a: \\dtpolbn7001\oss$\BDOSSDeploy\Scripts\Common\AutostartScript
+
+net use b: \\%komputer%\c$\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
+copy a:\Autoconfiguration.bat  b:\
+%~dp0psexec \\%komputer% net localgroup "Administrators"
+set /p komuAdmin= komu nadac admina? 
+%~dp0psexec \\%komputer% net localgroup Administrators "BDX.com\%komuAdmin%" /add
+net use a: /delete /yes
+net use b: /delete /yes
+goto menu
+
 
 :przygotujProfil
 ./psexec \\%komputer% mkdir c:\KopiaProfilu

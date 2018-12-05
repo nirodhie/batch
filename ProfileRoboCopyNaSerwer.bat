@@ -9,9 +9,7 @@ echo uzytkownik NIE MUSI sie wylogowywac ani zamykac zadnego programu
 echo ale wtedy skopiowana wersja nie bedzie najnowsza
 echo jesli dokona zmian w trakcie backupu
 echo.
-rem echo podaj nazwe komputera z ktorego trzeba skopiowac dane na \\DTPOLBN7001\ossprv$\ProfileBackup
-rem set /p source ="> "
-rem net use a: \\ltpolan7161\C$
+
 echo dostepne konta uzytkownikow:
 echo.
 

@@ -15,23 +15,24 @@ echo dostepne konta uzytkownikow:
 echo.
 cd /d %0\..
 dir b:\users\  /b
-
+pause
 echo.
-echo wybierz profil ktory chcesz skopiowac z listy powyzej
-set /p user="> "
+rem echo wybierz profil ktory chcesz skopiowac z listy powyzej
+rem set /p user="> "
 
 
 
 
 
-robocopy "b:\users\%user%" "c:\users\%username%" /E /ZB /XA:H /b /fft /r:0  /NDL /XD "AppData" /XD "AppData" /XD "Application Data" /XD "Cookies" /XD "Local Settings" /XD "NetHood" /XD "PrintHood" /XD "SendTo" /XD "Start Menu" /XD "Templates" /xf "desktop.ini"
+robocopy "b:\users\%username%" "c:\users\%username%" /E /ZB /XA:H /b /fft /r:0  /NDL /XD "AppData" /XD "AppData" /XD "Application Data" /XD "Cookies" /XD "Local Settings" /XD "NetHood" /XD "PrintHood" /XD "SendTo" /XD "Start Menu" /XD "Templates" /xf "desktop.ini"
 robocopy "b:\users\%username%\appdata\local\Lotus" "c:\users\%username%\appdata\local\Lotus" /E /ZB /XA:H /b /fft /r:0  /NDL /XD "AppData" /XD "AppData" /XD "Application Data" /XD "Cookies" /XD "Local Settings" /XD "NetHood" /XD "PrintHood" /XD "SendTo" /XD "Start Menu" /XD "Templates" /xf "desktop.ini"
 del /S /F /Q "b:\users\%username%\AppData\Local\Google\Chrome\User Data\Default\Cache\"
 robocopy "b:\users\%username%\appdata\local\Google\Chrome" "c:\users\%username%\appdata\local\Google\Chrome" /E /ZB /XA:H /b /fft /r:0  /NDL  /xf "desktop.ini"
 robocopy "b:\users\%username%\appdata\local\Microsoft\office" "c:\users\%username%\appdata\local\Microsoft\office" /E /ZB /XA:H /b /fft /r:0  /NDL  /xf "desktop.ini"
 robocopy "b:\users\%username%\appdata\local\Microsoft\onenote" "c:\users\%username%\appdata\local\Microsoft\onenote" /E /ZB /XA:H /b /fft /r:0  /NDL  /xf "desktop.ini"
-
-
+mkdir c:\users\%username%\appdata\local\Packages\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe\LocalState\Legacy
+xcopy "b:\users\%username%\appdata\Roaming\Microsoft\Sticky Notes\StickyNotes.snt" "c:\users\%username%\appdata\local\Packages\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe\LocalState"
+ren c:\users\%username%\appdata\local\Packages\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe\LocalState\Legacy\StickyNotes.snt ThresholdNotes.snt
 
 
 

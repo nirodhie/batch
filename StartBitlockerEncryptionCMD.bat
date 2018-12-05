@@ -1,0 +1,1 @@
+manage-bde -on c: -s -recoverypassword

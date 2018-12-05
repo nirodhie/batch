@@ -9,7 +9,7 @@ echo.
 net use B: \\DTPOLBN7001\ossprv$\ProfileBackup
 b:
 
-dir B:\profilebackup /b
+dir B: /b
 echo.
 echo wybierz profil ktory chcesz przywrocic z listy powyzej
 set /p user="> "
