@@ -74,3 +74,4 @@ wmic /node:%komputer% MEMORYCHIP get DeviceLocator, MemoryType, TypeDetail, Capa
 echo.
 wmic /node:%komputer% diskdrive get serialnumber,size,caption
 wmic /node:%komputer% logicaldisk where "name like 'c:'" get name,size,freespace
+pause
