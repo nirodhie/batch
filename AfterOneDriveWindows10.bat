@@ -5,7 +5,7 @@ net use B: /delete
 echo program uruchomiono jako 
 echo program nalezy uruchomic na nowym laptopie
 echo z konta hcl*****
-echo uzytkownik musi byc wylogowany ze starego laptopa
+echo uzytkownik powinien byc wylogowany ze starego laptopa
 echo.
 echo podaj nazwe komputera z ktorego kopiujemy dane
 set /p oldpc="\\"
@@ -27,13 +27,15 @@ rem set /p user="> "
 robocopy "b:\users\%username%" "c:\users\%username%" /E /ZB /XA:H /b /fft /r:0  /NDL /XD "AppData" /XD "AppData" /XD "Application Data" /XD "Cookies" /XD "Local Settings" /XD "NetHood" /XD "PrintHood" /XD "SendTo" /XD "Start Menu" /XD "Templates" /xf "desktop.ini"
 robocopy "b:\users\%username%\appdata\local\Lotus" "c:\users\%username%\appdata\local\Lotus" /E /ZB /XA:H /b /fft /r:0  /NDL /XD "AppData" /XD "AppData" /XD "Application Data" /XD "Cookies" /XD "Local Settings" /XD "NetHood" /XD "PrintHood" /XD "SendTo" /XD "Start Menu" /XD "Templates" /xf "desktop.ini"
 del /S /F /Q "b:\users\%username%\AppData\Local\Google\Chrome\User Data\Default\Cache\"
+del /S /F /Q "c:\users\%username%\AppData\Local\Google\Chrome\"
 robocopy "b:\users\%username%\appdata\local\Google\Chrome" "c:\users\%username%\appdata\local\Google\Chrome" /E /ZB /XA:H /b /fft /r:0  /NDL  /xf "desktop.ini"
 robocopy "b:\users\%username%\appdata\local\Microsoft\office" "c:\users\%username%\appdata\local\Microsoft\office" /E /ZB /XA:H /b /fft /r:0  /NDL  /xf "desktop.ini"
 robocopy "b:\users\%username%\appdata\local\Microsoft\onenote" "c:\users\%username%\appdata\local\Microsoft\onenote" /E /ZB /XA:H /b /fft /r:0  /NDL  /xf "desktop.ini"
 mkdir c:\users\%username%\appdata\local\Packages\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe\LocalState\Legacy
 xcopy "b:\users\%username%\appdata\Roaming\Microsoft\Sticky Notes\StickyNotes.snt" "c:\users\%username%\appdata\local\Packages\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe\LocalState"
 ren c:\users\%username%\appdata\local\Packages\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe\LocalState\Legacy\StickyNotes.snt ThresholdNotes.snt
-
+robocopy "b:\users\%username%.bdx\AppData\Roaming\avaya" "c:\Users\%username%\AppData\Roaming\avaya"  /b /fft /r:0  /NDL /E /MIR /ZB /NDL
+robocopy "b:\users\%username%.bdx\OneDrive - BD" "c:\Users\%username%\OneDrive - BD"  /b /fft /r:0  /NDL /E /MIR /ZB /NDL 
 
 
 
